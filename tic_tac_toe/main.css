@@ -1,0 +1,42 @@
+// make the squares line up un a 3x3 grid
+
+body,
+.container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  border: 3px solid black;
+  /* height: 300px; */
+}
+
+.row{
+  background-color: white;
+  flex: 5;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid green; */
+  margin: 10px;
+}
+
+.square{
+  font-family: helvetica, sans-serif;;
+  font-size: 3em;
+  background-color: white;
+  flex: 4;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  flex-basis: 33.33%;
+  border: 1px solid black;
+  /* width: 50px; */
+  height: 50px;
+  margin: 10px;
+}

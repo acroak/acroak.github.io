@@ -1,0 +1,268 @@
+body{
+  background-image: url("https://vignette.wikia.nocookie.net/serious/images/3/3f/Flamesexample.gif/revision/latest?cb=20120401104413");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-color: black;
+  color: white;
+}
+
+h3, h4, div, button{
+  font-family: 'Aclonica', sans-serif;
+}
+
+h3{
+  font-size: 1em;
+}
+/* ====== CONTAINER ====== */
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+}
+/* ======= MAIN CONTENT ======== */
+.main-content {
+  width: 90%;
+}
+
+.main-content > div {
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.sub{
+  max-width: 30%;
+}
+
+.chip > img{
+  max-width: 40%;
+}
+
+.btn{
+  border-radius: 28px;
+}
+
+.btn:hover {
+  box-shadow: 6px 5px 24px #8F0F18;
+}
+
+.players-area > img{
+  width: 37%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.dealers-area > img{
+  width: 37%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/*==================Styles by ID=====================*/
+#header{
+  /* background-color: red; */
+  justify-content: center;
+}
+#header > img {
+  width: 30%;
+}
+#deck-container{
+  /* background-color: orange; */
+  width: 15%;
+}
+#player-container{
+  /* background-color: yellow; */
+}
+#dealer-container{
+  /* background-color: green; */
+}
+#chips-container{
+  /* background-color: blue; */
+  justify-content: center;
+  align-items: center;
+}
+#navBtns{
+  /* background-color: purple; */
+}
+#theBet{
+  font-family: 'Aclonica', sans-serif;
+  font-size: 1em;
+}
+/* ====== Modal Styles ====== */
+#modal{
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	/*  top, left, height and width make sure it covers the entire page*/
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+	/*Set this to `none` so that the modal does not show initially on page load. We will change this dynamically by adding a display: block in our event handler that on the About the Game button in our javascript file.*/
+}
+
+#modal-textbox > h1{
+  font-family: 'Metal Mania', cursive;
+}
+
+#modal-textbox, #win-modal-textbox, #lose-modal-textbox, #blackJack-modal-textbox > a {
+  text-decoration: none;
+}
+
+#modal-textbox{
+  background: #F1AE28;
+	background-color: #F1AE28;
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	padding: 10px;
+	margin: 150px auto;
+  line-height: 25px;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+}
+
+#modal-textbox > span{
+  font-size: 1.5em;
+  font-weight: 800;
+  font-family: 'Metal Mania', cursive;
+}
+
+#winModal{
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	/*  top, left, height and width make sure it covers the entire page*/
+	z-index: 1;
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+	display: none;
+	/*Set this to `none` so that the modal does not show initially on page load. We will change this dynamically by adding a display: block in our event handler that on the About the Game button in our javascript file.*/
+}
+
+#win-modal-textbox {
+  font-family: 'Metal Mania', cursive;
+  font-size: 37px;
+  text-align: center;
+	background-color: rgba(0,0,0,0.75);
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	padding: 10px;
+	margin: 150px auto;
+  line-height: 25px;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+}
+
+#loseModal{
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+}
+
+#lose-modal-textbox {
+  font-family: 'Metal Mania', cursive;
+  font-size: 37px;
+  text-align: center;
+	background-color: rgba(0,0,0,0.75);
+	height: 350px;
+	width: 550px;
+	border-radius: 2px;
+	padding: 10px;
+	margin: 150px auto;
+  line-height: 45px;
+}
+
+#tiemodal{
+  	background-color: rgba(0,0,0,0.4);
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+  	z-index: 1;
+  	overflow: auto;
+  	display: none;
+}
+
+#tie-modal-textbox{
+  font-family: 'Metal Mania', cursive;
+  font-size: 37px;
+  text-align: center;
+  background-color: rgba(0,0,0,0.75);
+  height: 350px;
+  width: 550px;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 150px auto;
+  line-height: 25px;
+  display: none;
+}
+
+#blackJackModal{
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+
+}
+
+#blackJack-modal-textbox {
+  font-family: 'Metal Mania', cursive;
+  font-size: 37px;
+  text-align: center;
+	background-color: rgba(0,0,0,0.75);
+	height: 550px;
+	width: 550px;
+	border-radius: 2px;
+	padding: 10px;
+	margin: 150px auto;
+  line-height: 25px;
+}
+
+/* Modals with animation settings and the animation */
+#blackJack-modal-textbox > img{
+  animation-name: jack-black-spin;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  width: 60%;
+}
+
+#win-modal-textbox >img{
+  animation-name: jack-black-spin;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  width: 60%;
+}
+
+@keyframes jack-black-spin {
+  from {transform:rotate(0deg) scale(.01, .1);}
+  to {transform:rotate(2160deg) scale(1, 1);}
+}
