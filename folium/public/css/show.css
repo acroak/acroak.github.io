@@ -1,0 +1,47 @@
+*{
+  color: #444;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+a, h2, .poison, .edits{
+  color: #444;
+}
+
+a:hover{
+  color: rgb(0, 123, 255);
+}
+.container-fluid{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 80%;
+}
+.main-content{
+  text-align: center;
+  flex-direction: row;
+}
+.navHR{
+  border: 1px solid olivedrab;
+}
+h4{
+  font-style: italic;
+}
+
+img{
+  max-width: 400px;
+}
+span{
+  color: purple;
+  font-weight: 600;
+}
+
+form{
+  display: inline-block;
+}
+
+.about{
+  margin: auto;
+  max-width: 70%;
+  text-align: center;
+  color: #444
+
+}
