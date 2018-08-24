@@ -1,0 +1,358 @@
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Helvetica', sans-serif;
+}
+/* -------------------------------------------------DIV1/ NAV-----------------*/
+
+#logo-img{
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: 5%;
+  padding: 5px;
+}
+
+#logo-header{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: rgb(105,105,105);
+  align-items: left;
+  display: inline;
+  x: 20%;
+}
+#logo-header:hover{
+  color: black;
+}
+
+a {
+color: rgba(130,130,130,.57);
+text-decoration: none;
+}
+
+li :hover{
+  color: rgb(105,105,105);
+}
+
+.wrapper {
+padding-top: 94px;
+max-width: 100%;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+}
+.parent {
+position: fixed;
+top: 0;
+left: 0;
+margin: auto;
+width: 100%;
+border-bottom: 1px solid #ddd;
+z-index: 3;
+}
+.categories {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+background-color: #fff;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu {
+display: flex;
+align-items: center;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu ul {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+list-style: none;
+}
+
+.menu li {
+padding: 20px;
+margin-left: 20px;
+font-size: 16px;
+font-weight: bold;
+}
+.section-title{
+  text-align: center;
+  font-family: font-family: 'Roboto Condensed', sans-serif;
+  padding: 15px;
+}
+.flex-item {
+    display:flex;
+    align-items: center;
+    width: 350px;
+}
+.flex-item ul{
+  list-style: none;
+}
+/* -------------------------------------------------DIV2/ WALLPAPER-----------*/
+
+#div2{
+  background-image: url(../images/patternsm.jpg);
+  flex-direction: row;
+  height: 400px;
+}
+  .welcome{
+    text-align: center;
+  }
+  .sub2{
+
+  }
+  .profile-img{
+    border-radius: 100%;
+    max-heigth: 45%;
+    max-width: 45%;
+  }
+  .about-descript{
+    padding-top: 10px;
+  }
+
+/* -------------------------------------------------DIV3/ ABOUT---------------*/
+
+#div3{
+  background-color: Gainsboro;
+  height: auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+  .skills-header{
+    text-align: center;
+    background-color: LightGray;
+  }
+  .sub3{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .columns{
+    display: flex;
+    padding: 20px;
+  }
+  .resume-link{
+    color: #696969;
+  }
+  .resume-link:hover{
+    color: #91B59B;
+  }
+  p{
+    font-size: 19px;
+  }
+/* -------------------------------------------------DIV4/ SKILLS--------------*/
+#div4{
+  background-color: LightGray;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
+  .sub4{
+    flex-direction: row;
+    text-align: center;
+    width: 33%;
+    padding: 0px 15px;
+  }
+  .sub4 ul {
+    list-style: none;
+  }
+  .sub4 img {
+    max-width: 25%;
+    max-width: 25%;
+  }
+  .sub4 h4 {
+    padding: 5px;
+  }
+/* -------------------------------------------------DIV5/ CODE--------------*/
+
+#code {
+  background-color: #BEBEBE;
+  padding-top: 94px;
+}
+#div5{
+  background-color: #BEBEBE;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+  .sub5, .sub6{
+    flex-direction: row;
+    text-align: center;
+    width: 33%;
+    padding-bottom: 25px;
+  }
+  .sub5 a, .sub6 a {
+    color: #696969;
+    font-variant: small-caps;
+    font-size: 25px;
+  }
+  .sub6 h5{
+    font-size: 20px;
+    color: #696969;
+    font-variant: small-caps
+  }
+  .sub5 a:hover, .sub6 h5:hover{
+    color: white;
+  }
+  .sub5 h4, .sub6 h4{
+    font-variant: small-caps;
+    padding-top: 5px;
+    font-size: 30px;
+  }
+
+/* -------------------------------------------------DIV6/ ART-----------------*/
+#art{
+  background-color: DarkGray;
+  padding-top: 94px;
+}
+#div6{
+  background-color: DarkGray;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+  .sub6{
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    width: 33%;
+  }
+  .sub6 img{
+    max-width: 75%;
+  }
+/* -------------------------------------------------DIV7/ Footer--------------*/
+#div7, #img-source{
+  background-color: #696969;
+  text-align: center;
+  justify-content: center;
+  font-size: 10px;
+}
+    #img-source{
+      padding-bottom: 15px;
+    }
+    #img-source a{
+      color: black;
+    }
+    .social-nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .social-menu {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .social-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    }
+
+    .social-menu li {
+    padding: 20px;
+    font-weight: bold;
+    list-style: none;
+    }
+
+    .social-icon img{
+      max-width: 50%;
+      max-height: 50%;
+    }
+/* -------------------------------------------------MODAL-------------------- */
+.modal {
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+}
+#art-modal-1{
+  display: none;
+}
+#art-modal-2{
+  display: none;
+}
+#art-modal-3{
+  display: none;
+}
+
+#modal-textbox {
+	background-color: white;
+	height: auto;
+	width: auto;
+  max-width: 70%;
+	border-radius: 2px;
+	margin: 150px auto;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+#modal-textbox h1{
+  text-align: center;
+}
+.close-btn{
+  padding: 10px;
+  font-size: 40px;
+}
+.close-btn:hover{
+  text-shadow: 4px 4px 8px #91B59B;
+  color: #91B59B;
+}
+/* -------------------------------------------------CAROUSEL----------------- */
+.container{
+  display: flex;
+  justify-content: center;
+}
+.carousel-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+.carousel1-images, .carousel2-images, .carousel3-images {
+  width: 80%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 2px solid #696969;
+}
+.carousel1-images img, .carousel2-images img, .carousel3-images img {
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+}
+.carousel-images1 img:first-of-type, .carousel-images2 img:first-of-type, .carousel-images3 img:first-of-type {
+  display: block;
+}
+.carousel-button {
+  align-self: center;
+  background: #696969;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+
+}
+.carousel-button:hover {
+  cursor: pointer;
+  background: DarkGray;
+  color: white;
+}
