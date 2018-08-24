@@ -1,0 +1,44 @@
+/* *{
+  background-color: cadetblue;
+} */
+.calcBody{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 250px;
+  background-color: #63ffc6;
+  margin: 0 auto;
+
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 50px;
+  width: 200px;
+  /* border: 1px solid black; */
+  padding: 5px;
+}
+.resultScreenRow{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 50px;
+  width: 200px;
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 10px;
+}
+.num, .action{
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: #ff7d63;
+  text-align: center;
+  color: white;
+
+}
