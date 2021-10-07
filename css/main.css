@@ -138,11 +138,21 @@ li :hover {
   font-family: "Lato", "Helvetica", sans-serif;
 }
 
-.resume-link {
-  color: #000;
+#btn-resume {
+  background-color: #ff9801;
+  border-radius: 5px;
+  font-size: 1.25em;
+  padding: 0.5em;
+  border: 1px solid #ff9801;
+  box-shadow: 4px 4px 0px #011126;
 }
-.resume-link:hover {
-  color: #08678c;
+
+#btn-resume:active {
+  box-shadow: 1px 1px 0px;
+}
+
+#btn-resume a {
+  color: #000;
 }
 p {
   font-size: 19px;
