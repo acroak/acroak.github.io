@@ -2,512 +2,552 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Andrea Croak is a Web Developer and Artist proficient in front-end technolgies such as: HTML,CSS,LESS,SASS,JavaScript, React and some Python. She had a major in Illustraion from Maine College of Art & Design.">
-    <link rel="shortcut icon" href="images/logo.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="DESCRIPTIONN OF THE WEBSITE." />
+    <meta name="keywords" content="SEO KEYTERMS" />
     <title>Andrea Croak</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="assets/logo.png" />
+    <!-- bootstrap -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- custom google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/mobile.css" />
+    <!-- AOS lib -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- internal stylesheet -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <div class="parent">
-        <div class="navbar">
-          <a href="#div2">
-            <div class="logo flex-item">
-              <img id="logo-img" src="images/logo.png" alt="logo" />
-              <div class="">
-                <ul>
-                  <li><h1 id="logo-header">Andrea Croak</h1></li>
-                </ul>
+    <header class="">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/logo.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          Andrea Croak
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >About<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#art-link">Art</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- about/hero -->
+      <section id="hero">
+        <div>
+          <div
+            class="container section text-center"
+          >
+            <div class="row">
+              <div class="col-md-10 col-lg-7 mx-auto">
+                <img
+                  src="/assets/undraw_Design_feedback_re_8gtk.svg"
+                  alt=""
+                  id="hero-img"
+                />
               </div>
             </div>
-          </a>
-          <div class=""></div>
-          <div class="menu">
-            <ul>
-              <li><a href="#about_section">About</a></li>
-              <li><a href="#skills_section">Skills</a></li>
-              <li><a href="#code_section">Code</a></li>
-              <li><a href="#art_section">Art</a></li>
-              <li><a href="#contact_me">Contact</a></li>
-            </ul>
+            <div class="row" >
+              <div class="col-md-10 col-lg-7 mx-auto">
+                <h1 class="text-uppercase">
+                  Front End Developer | CSM® | Illustrator
+                </h1>
+                <p>
+                  User-minded Front End Developer prioritizes usability and
+                  adaptability during all projects. History of working
+                  effectively in Agile environments. Disciplined and hardworking
+                  team player with strong critical thinking skills and a
+                  solution-driven approach. Comfortable working within
+                  large-scale collaborations or on individually-developed
+                  assets.
+                </p>
+                <a
+                  href="/assets/docs/Andrea_Croak_Resume.pdf"
+                  class="btn btn-secondary--gradient"
+                  >Resume</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <div class="wrapper">
-      <main>
-        <section id="about_section">
-          <div class="categories" id="div3">
-            <div class="sub3 welcome">
+      </section>
+
+      <!-- skills -->
+      <section id="skills" data-aos="fade-up" data-aos-duration="2000">
+        <a id="skills-link"></a>
+        <div class="row text-center" ">
+          <div class="col-md-1">&nbsp;</div>
+          <div class="skills col-md-2">
+            <img
+              src="/assets/skills_icons/01-languages.png"
+              alt=""
+              class="skill-icon mx-auto d-block mx-auto d-block"
+            />
+            <h2>Languages</h2>
+            <ul class="list-unstyled">
+              <li>HTML5</li>
+              <li>CSS3/LESS</li>
+              <li>JavaScript</li>
+              <li>Python/Django</li>
+              <li>Ruby/Rails</li>
+            </ul>
+          </div>
+          
+          <div class="skills col-md-2">
+            <img
+              src="/assets/skills_icons/02-framework.png"
+              alt=""
+              class="skill-icon mx-auto d-block"
+            />
+            <h2>Frameworks</h2>
+            <ul class="list-unstyled">
+              <li>Bootstrap</li>
+              <li>ReactJS</li>
+              <li>NodeJS</li>
+              <li>JQuery</li>
+            </ul>
+          </div>
+
+          <div class="skills col-md-2">
+            <a
+              href="https://badgecert.com/bc/html/publicgroup.html?k=b2dDdlZRS0dBWWRVRFgxNlN3Q055ems0cTkybW0yb2Q"
+              id="scrum-link"
+            >
               <img
-                src="images/doodler.png"
-                alt="A picture of Andrea"
-                class="profile-img"
+                src="/assets/skills_icons/seal-csm.png"
+                alt=""
+                class="skill-icon mx-auto d-block"
               />
-              <br />
-              <br />
-              <h2>Front End Developer | CSM® | Illustrator</h2>
-              <hr />
-              <p class="about-descript">
-                User-minded Front End Developer prioritizes usability and adaptability during all projects. History of working effectively in Agile environments. Disciplined and hardworking team player with strong critical thinking skills and a solution-driven approach. Comfortable working within large-scale collaborations or on individually-developed assets.
-              </p>
-              <br />
-              <button id="btn-resume">
-                <a
-                  href="docs/Andrea_Croak_Resume.pdf"
-                  target="_blank"
-                  
-                  >Resumé</a
-                >
-              </button>
-            </div>
-            <!-- end sub3 -->
+              <h2>Scrum</h2>
+              <ul class="list-unstyled">
+                <li>Certified since 2019</li>
+                <li>SCRUM/Agile Methodologies</li>
+                <li>Badge ID 1054115</li>
+              </ul>
+            </a>
           </div>
-          <!--end div3-->
-        </section>
 
-        <section id="skills_section">
-          <div class="categories" id="div4">
-            <div class="section-title" id="skills">
-              <h3>Skills</h3>
-            </div>
-            <div class="columns">
-              <div class="sub4" data-aos="flip-left">
-                <img
-                  src="images/skills_icons/01-languages.png"
-                  alt="Code Languages Icons"
-                />
-                <h4>Languages</h4>
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3/LESS</li>
-                  <li>JavaScript</li>
-                  <li>Python/Django</li>
-                  <li>Ruby/Rails</li>
-                </ul>
-              </div>
-
-              <div class="sub4" data-aos="flip-left">
-                <img
-                  src="images/skills_icons/02-framework.png"
-                  alt="Frameworks Icon"
-                />
-                <h4>Frameworks</h4>
-                <ul>
-                  <li>Bootstrap</li>
-                  <li>React</li>
-                  <li>NodeJS</li>
-                </ul>
-              </div>
-
-              <div class="sub4" data-aos="flip-left">
-                <a
-                  href="https://badgecert.com/bc/html/publicgroup.html?k=b2dDdlZRS0dBWWRVRFgxNlN3Q055ems0cTkybW0yb2Q"
-                >
-                  <img
-                    src="images/skills_icons/seal-csm.png"
-                    alt="Certified Scrum Master"
-                    id="csm"
-                  />
-                </a>
-                <h4>Scrum</h4>
-                <ul>
-                  <li>Scrum/Agile flows</li>
-                  <li>Certified since 2019!</li>
-                </ul>
-              </div>
-
-              <div class="sub4" data-aos="flip-left">
-                <img
-                  src="images/skills_icons/03-database.png"
-                  alt="Server Icon"
-                />
-                <h4>Databases</h4>
-                <ul>
-                  <li>SQL</li>
-                  <li>MongoDB</li>
-                </ul>
-              </div>
-
-              <div class="sub4" data-aos="flip-left">
-                <img src="images/skills_icons/04-other.png" alt="Binary Icon" />
-                <h4>Other</h4>
-                <ul>
-                  <li>Heroku</li>
-                  <li>Git/Github</li>
-                  <li>Adobe Creative Suite</li>
-                  <li>Jira/Rally</li>
-                  <li>BitBucket</li>
-                </ul>
-              </div>
-            </div>
+          <div class="skills col-md-2">
+            <img
+              src="/assets/skills_icons/03-database.png"
+              alt=""
+              class="skill-icon mx-auto d-block"
+            />
+            <h2>Database</h2>
+            <ul class="list-unstyled">
+              <li>SQL</li>
+              <li>MongoDB</li>
+            </ul>
           </div>
-        </section>
 
-        <section id="code_section">
-          <div class="section-title" id="code">
-            <h3>Code</h3>
+          <div class="skills col-md-2">
+            <img
+              src="/assets/skills_icons/04-other.png"
+              alt=""
+              class="skill-icon mx-auto d-block"
+            />
+            <h2>Misc</h2>
+            <ul class="list-unstyled">
+              <li>Heroku</li>
+              <li>Git/Github</li>
+              <li>Adobe Creative Suite</li>
+              <li>Jira/Rally</li>
+              <li>BitBucket</li>
+            </ul>
           </div>
-          <div class="categories" id="div5">
-            <div class="sub5" data-aos="zoom-in">
-              <img src="images/code_imgs/blackjack.jpg" alt="" />
+          <div class="col-md-1">&nbsp;</div>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section id="projects" data-aos="zoom-in-up" data-aos-duration="2000">
+        <a id="projects-link"></a>
+        <div class="container">
+          <div class="row text-center justify-content-center">
+            <div class="col-12 col-sm-6 col-lg-4 project-container">
+              <img src="assets/code_imgs/blackjack.jpg" alt="" />
               <h4>jack black blackjack</h4>
               <a
                 href="https://acroak.github.io/blackjack/index.html"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><h5>live</h5></a
               >
               <a
                 href="https://github.com/acroak/acroak.github.io/tree/master/blackjack"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><h5>code</h5></a
               >
             </div>
 
-            <div class="sub5" data-aos="zoom-in" id="code-modal-2">
-              <img src="images/code_imgs/folium.jpg" alt="" />
+            <div class="col-12 col-sm-6 col-lg-4 project-container">
+              <img src="assets/code_imgs/folium.jpg" alt="" />
               <h4>folium</h4>
-              <a
-                href="https://serene-mountain-45563.herokuapp.com/plants"
-                target="_blank" rel="noopener noreferrer"
-                ><h5>live</h5></a
-              >
+              <!-- https://serene-mountain-45563.herokuapp.com/plants -->
+              <h5>Currently updating dependencies</h5>
               <a
                 href="https://github.com/acroak/acroak.github.io/tree/master/folium"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><h5>code</h5></a
               >
             </div>
-            <div class="sub5" data-aos="zoom-in" id="code-modal-3">
-              <img src="images/code_imgs/rentr.jpg" alt="" />
-              <h4>rentr</h4>
-              <a
-                href="https://mighty-bayou-92141.herokuapp.com/"
-                target="_blank" rel="noopener noreferrer"
-                ><h5>live</h5></a
-              >
-              <a
-                href="https://github.com/acroak/acroak.github.io/tree/master/rentr"
-                target="_blank" rel="noopener noreferrer"
-                ><h5>code</h5></a
-              >
-            </div>
-            <div class="sub5" data-aos="zoom-in" id="code-modal-4">
-              <img src="images/code_imgs/tictactoe.jpg" alt="" />
+
+            <div class="col-12 col-sm-6 col-lg-4 project-container">
+              <img src="assets/code_imgs/tictactoe.jpg" alt="" />
               <h4>tic tac toe</h4>
               <a
                 href="https://acroak.github.io/tic_tac_toe/index.html"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><h5>live</h5></a
               >
               <a
                 href="https://github.com/acroak/acroak.github.io/tree/master/tic_tac_toe"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><h5>code</h5></a
               >
             </div>
-            <div class="sub5" data-aos="zoom-in" id="code-modal-5">
-              <img src="images/code_imgs/creature_creator.png" alt="" />
+            <div class="col-12 col-sm-6 col-lg-4 project-container">
+              <img src="assets/code_imgs/creature_creator.png" alt="" />
               <h4>creature creator</h4>
+              <!-- https://creaturecreator.herokuapp.com/beasts -->
+              <h5>Currently updating dependencies</h5>
               <a
-                href="https://creaturecreator.herokuapp.com/beasts"
-                target="_blank" rel="noopener noreferrer"
+                href="https://github.com/acroak/creaturecreator"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><h5>code</h5></a
+              >
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 project-container">
+              <img src="assets/code_imgs/rentr.jpg" alt="" />
+              <h4>rentr</h4>
+              <a
+                href="https://mighty-bayou-92141.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><h5>live</h5></a
               >
               <a
-                href="https://github.com/acroak/creaturecreator"
-                target="_blank" rel="noopener noreferrer"
+                href="https://github.com/acroak/acroak.github.io/tree/master/rentr"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><h5>code</h5></a
               >
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section id="art_section">
-          <div class="section-title" id="art">
-            <h3>Art</h3>
+      <!-- art -->
+      <section id="art" data-aos="zoom-in-up" data-aos-duration="2000">
+        <a id="art-link"></a>
+        <div class="row">
+          <div class="mx-auto">
+            <!-- indicators -->
+            <div
+              id="carouselIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselIndicators" data-slide-to="10"></li>
+                <li data-target="#carouselIndicators" data-slide-to="11"></li>
+                <li data-target="#carouselIndicators" data-slide-to="12"></li>
+              </ol>
+              <!-- Images -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/assets/art_imgs/owl_insta.webp"
+                    class="d-block w-100"
+                    alt="A charcoal drawing of a Barred owl"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/XmasTurkey17_Insta.webp"
+                    class="d-block w-100"
+                    alt="A back and white ink drawing of a turkey"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/Woody_Insta.webp"
+                    class="d-block w-100"
+                    alt="A charcoal portrait of Woody the Greyhound"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/three_eyed_devil.webp"
+                    class="d-block w-100"
+                    alt="An acrylic painting of a three eyes demon"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/ratkin_witch.webp"
+                    class="d-block w-100"
+                    alt="A Ratkin Witch"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/CorruptWizard_Insta.webp"
+                    class="d-block w-100"
+                    alt="A crazy looking modern wizard"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/pidge.webp"
+                    class="d-block w-100"
+                    alt="An acrylic painting of a pidgeon"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/gnoll_alchemist.webp"
+                    class="d-block w-100"
+                    alt="A Gnoll Alchemist"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/crow_tree_punch.webp"
+                    class="d-block w-100"
+                    alt="Punchneedle embroidery Crow in and apple tree"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/daisy_embroidery.webp"
+                    class="d-block w-100"
+                    alt="Embroidered Daisies"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/leaf_mug.webp"
+                    class="d-block w-100"
+                    alt="A Cermaic mug with blue leaves"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/skull_mug.webp"
+                    class="d-block w-100"
+                    alt="A Cermaic mug with illustrated skulls"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/assets/art_imgs/dragonborn_barbarian.webp"
+                    class="d-block w-100"
+                    alt="A Dragonborn Baarbarian"
+                  />
+                </div>
+              </div>
+
+              <!-- navigation arrows -->
+              <a
+                class="carousel-control-prev"
+                href="#carouselIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
-          <div class="categories" id="div6">
-            <div class="sub6" data-aos="zoom-in">
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <!-- cat footer header -->
+        <div class="row text-center mx-auto cat-footer">
+          <div class="col-12 mx-auto">
+            <img
+              src="/assets/undraw_Playful_cat_re_bxiu.svg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <!-- contact -->
+        <a id="contact-link"></a>
+        <div class="row text-center social-icon-container">
+          <div class="col-2">&nbsp;</div>
+          <div class="col-2">
+            <a href="mailto:acroak@live.com" title="Email">
               <img
-                src="images/art_imgs/traditional_modal/owl_insta.jpg"
-                alt=""
-              />
-              <h4>Illustration</h4>
-              <h5 id="open-art-modal-1">more</h5>
-            </div>
-            <div class="modal" id="art-modal-1">
-              <div class="modal-textbox">
-                <div class="close-btn">
-                  <a id="close-1" href="#">X</a>
-                </div>
-                <h1>Illustration</h1>
-                <div class="container">
-                  <div class="carousel-container">
-                    <!-- previous button -->
-                    <div class="carousel-button previous1">
-                      <span><h2 alt="previous"><</h2> </span>
-                    </div>
-                    <!-- images -->
-                    <div class="carousel1-images">
-                      <img
-                        src="images/art_imgs/traditional_modal/owl_insta.jpg"
-                        alt="Barred Owl"
-                      />
-                      <img
-                        src="images/art_imgs/traditional_modal/Screen Shot 2018-08-21 at 2.07.49 PM.png"
-                        alt="pigeon painting"
-                      />
-                      <img
-                        src="images/art_imgs/traditional_modal/Screen Shot 2018-08-21 at 12.29.30 PM.png"
-                        alt="tri-clops"
-                      />
-                      <img
-                        src="images/art_imgs/traditional_modal/Woody_Insta.jpg"
-                        alt="Woody the Greyhound"
-                      />
-                      <img
-                        src="images/art_imgs/traditional_modal/XmasTurkey17_Insta.jpg"
-                        alt="Turkey"
-                      />
-                      <img
-                        src="images/art_imgs/inktober_modal/CorruptWizard_Insta.jpg"
-                        alt="Corrupt Wizard"
-                      />
-                      <img
-                        src="images/art_imgs/inktober_modal/RakashaSorceror_Insta.jpg"
-                        alt="Rakasha Sorceror"
-                      />
-                      <img
-                        src="images/art_imgs/inktober_modal/Screen Shot 2018-08-21 at 2.04.03 PM.png"
-                        alt="Orc Shaman"
-                      />
-                      <img
-                        src="images/art_imgs/inktober_modal/Screen Shot 2018-08-21 at 2.04.27 PM.png"
-                        alt="Ratkin Witch"
-                      />
-                      <img
-                        src="images/art_imgs/inktober_modal/Screen Shot 2018-08-21 at 2.05.01 PM.png"
-                        alt="Kenku Mystic"
-                      />
-                      <img
-                        src="images/art_imgs/inktober_modal/Screen Shot 2018-08-21 at 2.05.15 PM.png"
-                        alt="Gnoll Wizard"
-                      />
-                      <img
-                        src="images/art_imgs/inktober_modal/Screen Shot 2018-08-21 at 2.05.33 PM.png"
-                        alt="Dragon Born Barbarian"
-                      />
-                    </div>
-                    <!-- next button -->
-                    <div class="carousel-button next1">
-                      <span><h2 alt="next">></h2> </span>
-                    </div>
-                  </div>
-                </div>
-                <!--end carousel container -->
-              </div>
-              <!-- end modal text box -->
-            </div>
-            <!-- end art-modal-1 -->
-
-            <div class="sub6" data-aos="zoom-in">
-              <img src="images/jasper.png" alt="Jasper the Cat" />
-              <h4>
-                Jasper
-                <br>
-                HR Manager
-              </h4>
-            </div>
-
-
-            <div class="sub6" data-aos="zoom-in">
-              <img src="images/art_imgs/3d_modal/leaf_mug.png" alt="" />
-              <h4>3-Dimensional</h4>
-              <h5 id="open-art-modal-2">more</h5>
-            </div>
-            <div class="modal" id="art-modal-2">
-              <div class="modal-textbox">
-                <div class="close-btn">
-                  <a id="close-2" href="#">X</a>
-                </div>
-                <h1>3-Dimensional</h1>
-                <!-- CAROUSEL -->
-                <div class="container">
-                  <div class="carousel-container">
-                    <!-- previous button -->
-                    <div class="carousel-button previous2">
-                      <span><h2 at="previous"><</h2> </span>
-                    </div>
-                    <!-- images -->
-                    <div class="carousel2-images">
-                      <img src="images/art_imgs/3d_modal/skull_mug.png" alt="A Mug with hand drawn Skulls">
-                      <img src="images/art_imgs/3d_modal/leaf_mug.png" alt="A mug with blue leaves">
-                      <img src="images/art_imgs/3d_modal/grampa_mug.png" alt="A mug with blue stripes">
-                      <img src="images/art_imgs/3d_modal/leaf_slab_mug.png" alt="a wonky mug with green leaves">
-                      <img src="images/art_imgs/3d_modal/mateegreen_and_shino_mug.png" alt="a white and green mug">
-                      <img src="images/art_imgs/3d_modal/pears_bud_vase.png" alt="a bud vase with pears">
-                      <img src="images/art_imgs/3d_modal/slab_mug.png" alt="a square bottomed mug">
-                      <img src="images/art_imgs/3d_modal/crow_tree_punch.png" alt="a crow in an apple tree punch needle embroidery">
-                      <img src="images/art_imgs/3d_modal/daisy_embroidery.png" alt="embroidered daisies">
-                      <img src="images/art_imgs/3d_modal/punchneedle_snowman.png" alt="a punchneedle snowman">
-                    </div>
-                    <!-- next button -->
-                    <div class="carousel-button next2">
-                      <span><h2 alt="next">></h2> </span>
-                    </div>
-                  </div>
-                </div>
-                <!--end carousel container -->
-              </div>
-            </div> <!--end modal 2 text box -->
-          </div><!-- End Modal 2-->
-        </section>
-      </main>
-      <footer id="contact_me">
-        <div class="social-nav" id="div7">
-          <ul class="contact-info social-menu">
-            <li class="social-icon">
-              <a href="mailto:acroak@live.com">
-                <img
-                  src="images/social_icons/if_email_mail_envelope_send_message_1011336.png"
-                  alt="Email Me"
-                  id="email-icon"
-                />
-              </a>
-            </li>
-            <li class="social-icon">
-              <a href="https://github.com/acroak" target="_blank" rel="noopener noreferrer">
-                <img
-                  src="images/social_icons/if_github_social_media_logo_1221583.png"
-                  alt="GitHub "
-                  id="github-icon"
-                />
-              </a>
-            </li>
-            <li class="social-icon">
-              <a
-                href="https://www.linkedin.com/in/andreacroak/"
-                target="_blank" rel="noopener noreferrer"
-              >
-                <img
-                  src="images/social_icons/if_online_social_media_linked_in_734383.png"
-                  alt="LinkedIn"
-                  id="linkedin-icon"
-                />
-              </a>
-            </li>
-            <li class="social-icon">
-              <a
-                href="https://www.instagram.com/arcroak/?hl=en"
-                target="_blank" rel="noopener noreferrer"
-              >
-                <img
-                  src="images/social_icons/if_instagram_online_social_media_734394.png"
-                  alt="Instagram"
-                  id="instagram-icon"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="categories" id="img-source">
-          <div>
-            <p>
-              Copyright &copy; 2018 -
-              <script type="text/javascript">
-                document.write(new Date().getFullYear());
-              </script>
-            </p>
-            <p><div class="columns">
-              <div>
-                Icons made by
-                <a
-                  href="https://www.flaticon.com/authors/roundicons"
-                  title="Roundicons" rel="noopener noreferrer"
-                  >Roundicons</a
-                >
-                from
-                <a href="https://www.flaticon.com/" title="Flaticon" rel="noopener noreferrer"
-                  >www.flaticon.com</a 
-                >
-              </div>
-              <div>
-                Icons made by
-                <a
-                  href="https://www.flaticon.com/authors/pixel-perfect"
-                  title="Pixel perfect" rel="noopener noreferrer"
-                  >Pixel perfect</a
-                >
-                from
-                <a href="https://www.flaticon.com/" title="Flaticon" rel="noopener noreferrer"
-                  >www.flaticon.com</a
-                >
-              </div>
-              <div>
-                Icons made by
-                <a
-                  href="https://www.flaticon.com/authors/smashicons"
-                  title="Smashicons" rel="noopener noreferrer"
-                  >Smashicons</a
-                >
-                from
-                <a href="https://www.flaticon.com/" title="Flaticon" rel="noopener noreferrer"
-                  >www.flaticon.com</a
-                >
-              </div>
-              <div>
-                Icons made by
-                <a href="https://www.freepik.com" title="Freepik" rel="noopener noreferrer">Freepik</a> from
-                <a href="https://www.flaticon.com/" title="Flaticon" rel="noopener noreferrer"
-                  >www.flaticon.com</a
-                >
-              </div>
-              <div>
-                Icons made by
-                <a
-                  href="https://www.flaticon.com/authors/iconixar"
-                  title="iconixar" rel="noopener noreferrer"
-                  >iconixar</a
-                >
-                from
-                <a href="https://www.flaticon.com/" title="Flaticon" rel="noopener noreferrer"
-                  >www.flaticon.com</a
-                >
-              </div>
-              <div>
-                Icons made by
-                <a href="https://www.flaticon.com/authors/ddara" rel="noopener noreferrer" title="dDara"
-                  >dDara</a
-                >
-                from
-                <a href="https://www.flaticon.com/" title="Flaticon" rel="noopener noreferrer"
-                  >www.flaticon.com</a
-                >
-              </div>
-            </div></p>
-   
+              src="/assets/social_icons/envelope-fill.svg"
+              alt=""
+              class="mx-auto d-block mx-auto d-block contact-icon"
+            />
+            </a>
           </div>
-          <div>
-            
-          </div>
-        </div>
-      </footer>
-    </div>
-    <!-- end wrapper div -->
 
+          <div class="col-2">
+            <a href="https://www.linkedin.com/in/andreacroak/" title="LinkedIn" target="_blank"
+            rel="noopener noreferrer">
+              <img
+              src="/assets/social_icons/linkedin.svg"
+              alt=""
+              class="mx-auto d-block contact-icon"
+            />
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="https://github.com/acroak" title="GitHub" target="_blank"
+            rel="noopener noreferrer">
+              <img
+              src="/assets/social_icons/github.svg"
+              alt=""
+              class="mx-auto d-block contact-icon"
+            />
+            </a>
+          </div>
+
+          <div class="col-2">
+            <a href="https://www.instagram.com/arcroak" title="Instagram" target="_blank"
+            rel="noopener noreferrer">
+              <img
+              src="/assets/social_icons/instagram.svg"
+              alt=""
+              class="mx-auto d-block contact-icon"
+            />
+            </a>
+          </div>
+          <div class="col-2">&nbsp;</div>
+        </div>
+      </div>
+
+      <div class="row text-center social-icon-container">
+        <div class="col-12">
+          <h5>Special Thank you to:</h5>
+          <p>
+            Header & Footer Illustrations from
+            <a
+              href="https://undraw.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >undraw.co</a
+            >
+          </p>
+          <p>
+            Icons made by
+            <a href="https://www.freepik.com" title="Freepik" target="_blank"
+            rel="noopener noreferrer">Freepik</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons" target="_blank"
+            rel="noopener noreferrer">Smashicons</a>, <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect" target="_blank"
+            rel="noopener noreferrer">Pixel perfect</a>, and <a href="https://www.flaticon.com/authors/ddara" title="dDara" target="_blank"
+            rel="noopener noreferrer">dDara</a> from<a href="https://www.flaticon.com/" title="Flaticon" target="_blank"
+            rel="noopener noreferrer">www.flaticon.com</a>
+          </p>
+          <img src="/assets/jasper.png" alt="Jasper the Cat" id="jasper-footer" class="mx-auto d-block" >
+          <p>And Jasper the Cat, household HR Manager and floofmeister</p>
+          <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Rights Reserved</p>
+      </div>
+      <div>
+
+      </div>
+    </footer>
+
+    <!-- bootstrap javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS lib -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
