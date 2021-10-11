@@ -1,0 +1,264 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* fade in effect on load */
+main {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* core element styles */
+section {
+  margin: 5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+a {
+  color: #1c6ea4;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.bg-primary {
+  background-color: #00a4c1 !important;
+}
+
+.row {
+  margin: 0;
+}
+/* Header */
+header {
+  margin-bottom: 5rem;
+}
+/* Nav */
+nav {
+  padding: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
+
+/* Section link offset */
+/* rememeber to set this up for break points */
+:target {
+  display: block;
+  position: relative;
+  top: -7rem;
+  visibility: hidden;
+}
+
+/* body secttions */
+/* About */
+#hero {
+  position: relative;
+}
+#hero-img {
+  max-width: 15rem;
+  max-height: auto;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 1.5rem;
+}
+h1 {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+.btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: #000;
+}
+#hero .btn {
+  background: #00a4c1;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  border: none !important;
+  color: #000;
+}
+
+#hero .btn:hover {
+  background-color: #1c6ea4;
+  color: #fff;
+}
+/* Skills */
+
+.skill-icon {
+  max-width: 6rem;
+  max-height: auto;
+  justify-content: center;
+  align-self: center;
+}
+
+#scrum-link {
+  color: #000;
+}
+#scrum-link:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Projects */
+#projects img {
+  max-width: 20rem;
+  border: 1px solid #000;
+}
+
+.project-container {
+  margin-bottom: 2rem;
+}
+
+/* carousel */
+.carousel-item,
+.carousel {
+  max-height: 35rem;
+}
+
+.carousel-item img {
+  max-height: 35rem;
+  max-width: auto;
+  border: 1px solid #000;
+}
+
+.carousel-indicators li {
+  background-color: rgba(0, 164, 193, 0.5);
+}
+
+.carousel-indicators .active {
+  background-color: rgba(0, 164, 193, 1);
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300a4c1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300a4c1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* footer */
+
+footer {
+  font-size: 0.85rem;
+}
+.contact-icon {
+  max-width: 3rem;
+  max-height: auto;
+  width: 3rem;
+  height: auto;
+}
+
+.cat-footer,
+.social-icon-container,
+.thank-you {
+  margin-bottom: 3rem;
+}
+
+#jasper-footer {
+  max-height: auto;
+  max-width: 10rem;
+}
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  #skills h2 {
+    font-size: 1.25rem;
+  }
+
+  :target {
+    display: block;
+    position: relative;
+    top: -7rem; /* this is your offset */
+    visibility: hidden;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  #skills h2 {
+    font-size: 1.35rem;
+  }
+
+  :target {
+    display: block;
+    position: relative;
+    top: -6rem; /* this is your offset */
+    visibility: hidden;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #hero-img {
+    max-width: 30rem;
+    max-height: auto;
+  }
+
+  :target {
+    display: block;
+    position: relative;
+    top: -7rem; /* this is your offset */
+    visibility: hidden;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #hero-img {
+    max-width: 35rem;
+    max-height: auto;
+  }
+
+  :target {
+    display: block;
+    position: relative;
+    top: -7rem; /* this is your offset */
+    visibility: hidden;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  #hero-img {
+    max-width: 40rem;
+    max-height: auto;
+  }
+
+  :target {
+    display: block;
+    position: relative;
+    top: -10rem; /* this is your offset */
+    visibility: hidden;
+  }
+}
