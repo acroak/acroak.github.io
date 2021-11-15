@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <% include ../partials/head_index.ejs %>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://pics.clipartpng.com/midle/Leaf_PNG_Clip_Art-1968.png" />
+
+
+    <title>New Plant</title>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <!-- Banner -->
+        <% include ../partials/banner.ejs %>
+      <!-- NAVIGATION -->
+        <% include ../partials/nav.ejs %>
+        <hr class="navHR">
+      <!-- MAIN CONTENT -->
+    <form class="" action="/plants" method="post">
+      <input type="text" name="name" placeholder="Name"/>
+      <br/>
+      <input type="text" name="sciname" placeholder="Scientific Name"/>
+      <br/>
+      <input type="text" name="img" placeholder="http://www.someurl.com"/>
+      <br>
+      <input type="text" name="sun" placeholder="Sunlight"/>
+      <br/>
+      <input type="text" name="tags" placeholder="Tags"/>
+      <br/>
+      Poisonous to Pets: <input type="checkbox" name="" value="">
+      <br>
+      <textarea name="description" rows="8" cols="80"></textarea>
+
+      <br/>
+      <input type="submit" name="submit" value="Create"/>
+    </form>
+    <!-- FOOTER -->
+      <% include ../partials/footer.ejs %>
+  </div>
+
+
+  </body>
+</html>
