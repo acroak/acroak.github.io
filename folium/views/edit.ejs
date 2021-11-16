@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <% include ../partials/head_index.ejs %>
+
+
+    <title>Edit</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Banner -->
+        <% include ../partials/banner.ejs %>
+      <!-- NAVIGATION -->
+        <% include ../partials/nav.ejs %>
+        <hr class="navHR">
+
+      <form class="" action="/plants/<%=plant.id%>?_method=PUT" method="post">
+        <input type="text" name="name" value="<%= plant.name %>"/>
+        <br/>
+        <input type="text" name="sciname" value="<%= plant.sciname %>"/>
+        <br/>
+        <input type="text" name="img" value="<%= plant.img %>"/>
+        <br>
+        <input type="text" name="sun" value="<%= plant.sun %>"/>
+        <br/>
+        <input type="text" name="tags" value="<%= plant.tags %>"/>
+        <br/>
+        <textarea name="description" rows="8" cols="80"><%= plant.description %></textarea>
+        <br/>
+        <input type="submit" name="submit" value="Update"/>
+      </form>
+
+      <form action="/<%=plant.id%>?_method=DELETE" method="POST">
+          <input type="submit" value="DELETE"/>
+      </form>
+      <!-- FOOTER -->
+        <% include ../partials/footer.ejs %>
+    </div>
+
+
+  </body>
+</html>
