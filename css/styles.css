@@ -1,0 +1,122 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    /* background-color: #1C1C1C; */
+    color: #FFFFFF;
+    --bs-font-sans-serif: "Open Sans", Arial, Helvetica, sans-serif;
+    
+     
+}
+
+.container {
+    max-width: 90%;
+}
+
+
+h1, h2, h3 {
+    font-weight: bolder;
+    font-family: "Archivo Black", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.75em;
+}
+
+a {
+    --bs-link-color-rgb: #FFFFFF;
+}
+
+#about, #skills, #portfolio {
+    margin: 1.5em ;
+}
+
+.btn-primary {
+    background-color: #cada2c;
+    border-color: #cada2c;
+    color: #1C1C1C;
+    font-family: "Archivo Black", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: #cada2c;
+    --bs-btn-border-color: #cada2c;
+}
+
+.nav-name{
+    font-family: "Archivo Black", "Open Sans", Arial, Helvetica, sans-serif;
+}
+.nav-link {
+    --bs-nav-pills-link-active-color:#1C1C1C;
+    --bs-nav-pills-link-active-bg: #cada2c;
+    --bs-nav-link-color:#cada2c;
+    --bs-nav-link-hover-color:#FFFFFF;
+    
+}
+
+.carrot_bullet {
+    color:#cada2c;
+    font-family:  "Archivo Black", "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+
+.hero-fade-in {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: 1.5s;
+ }
+
+.fade-in-on-scroll {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: 1s;
+ }
+
+ .fade-in-show {
+    transform: translateY(0px);
+    opacity: 1;
+ }
+
+ .fs-1 {
+    font-size: 3.75rem!important;
+ }
+
+ footer {
+    height: 100px;
+    background-color: green;
+    position: relative;
+  }
+
+  .footer__inner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 40px 60px;
+    width: 100%;
+    display: none;
+  }
+  .logo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 80px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform, opacity;
+    transition-duration: .8s;
+    transition-timing-function: ease;  
+    
+  }
+
+  footer.show{
+    transform: translateY(0);
+    opacity: 1;
+    display:unset;
+  }
+  footer > nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
