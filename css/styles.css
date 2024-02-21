@@ -5,14 +5,7 @@ body {
     /* background-color: #1C1C1C; */
     color: #FFFFFF;
     --bs-font-sans-serif: "Open Sans", Arial, Helvetica, sans-serif;
-    
-     
 }
-
-.container {
-    max-width: 90%;
-}
-
 
 h1, h2, h3 {
     font-weight: bolder;
@@ -27,8 +20,19 @@ a {
     --bs-link-color-rgb: #FFFFFF;
 }
 
-#about, #skills, #portfolio {
-    margin: 1.5em ;
+.container {
+    max-width: 90%;
+}
+
+.nav-name{
+    font-family: "Archivo Black", "Open Sans", Arial, Helvetica, sans-serif;
+}
+.nav-link {
+    --bs-nav-pills-link-active-color:#1C1C1C;
+    --bs-nav-pills-link-active-bg: #cada2c;
+    --bs-nav-link-color:#cada2c;
+    --bs-nav-link-hover-color:#FFFFFF;
+    
 }
 
 .btn-primary {
@@ -43,23 +47,9 @@ a {
     --bs-btn-border-color: #cada2c;
 }
 
-.nav-name{
-    font-family: "Archivo Black", "Open Sans", Arial, Helvetica, sans-serif;
+#about, #skills, #portfolio {
+    margin: 1.5em ;
 }
-.nav-link {
-    --bs-nav-pills-link-active-color:#1C1C1C;
-    --bs-nav-pills-link-active-bg: #cada2c;
-    --bs-nav-link-color:#cada2c;
-    --bs-nav-link-hover-color:#FFFFFF;
-    
-}
-
-.carrot_bullet {
-    color:#cada2c;
-    font-family:  "Archivo Black", "Open Sans", Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-}
-
 
 .hero-fade-in {
     transform: translateY(-30px);
@@ -82,41 +72,14 @@ a {
     font-size: 3.75rem!important;
  }
 
- footer {
-    height: 100px;
-    background-color: green;
-    position: relative;
-  }
+.carrot_bullet {
+    color:#cada2c;
+    font-family:  "Archivo Black", "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
 
-  .footer__inner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 40px 60px;
-    width: 100%;
-    display: none;
-  }
-  .logo {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 40px;
-    margin-bottom: 80px;
-    transform: translateY(50px);
-    opacity: 0;
-    transition: transform, opacity;
-    transition-duration: .8s;
-    transition-timing-function: ease;  
-    
-  }
+.skill-icon {
+    max-width: 20%;
+}
 
-  footer.show{
-    transform: translateY(0);
-    opacity: 1;
-    display:unset;
-  }
-  footer > nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  
