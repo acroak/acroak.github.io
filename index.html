@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- INspiration -->
-    <!-- hero/landing -->
-    <!-- https://danielkorpai.com/ -->
-
-    <!-- the lets do this area, colors  and bullet animations-->
-    <!-- https://www.mitchellpalmer.com/about/ -->
-    <!-- https://css-tricks.com/fade-in-on-scroll-triggered-animation-vanilla-javascript/ -->
-    <!-- https://www.geeksforgeeks.org/how-to-add-effect-using-pure-javascript/ -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
               
+        <meta name="description" content="Andrea Croak  | Software Developer | Scrum Master | Multi-media Artist" />
+
+        <link rel="icon" type="image/x-icon" href="/images/logo.ico">
 
         <!-- Bootstrap CDN -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -62,7 +57,7 @@
                 <div class="row align-items-start">
                 <div class="row">
                     <div class="col-md-6 py-4">
-                        <h1 class="fs-1 hero-fade-in">Software Developer</h1>
+                        <h1 class="fs-1 hero-fade-in">Software<br/>Developer</h1>
                         <p class="hero-fade-in">As a dedicated software developer, I bring a wealth of technical expertise and a passion for innovation to every project. A team player with strong critical thinking skills and a deep belief that learning is a life long opportunity. Comfortable working within large-scale collaborations or on individually-developed assets.</p>
                         <a href="/docs/Croak_Resume.pdf"  target="_blank" rel="noreferrer noopener" alt="Resume"><button type="button" class="btn btn-primary hero-fade-in">Resume</button></a>
                     </div>
@@ -77,21 +72,21 @@
             <!-- About -->
             <div class="py-5 bg-body-tertiary" id="about">
                 <div class="container">
-                    <div class="row justify-content-md-center">
+                    <div class="row">
                         <div class="col">
                         <h2>About</h2>
 
-                        <p><span class="carrot_bullet"> > </span> Hi there! I'm Andrea Croak, a creative technologist blending a background in fine arts with a passion for technology. With a Master's degree in Computer Science (Northeastern University '24), a Bachelor's in Fine Arts (MECA&D '13), and training from the General Assembly Fullstack Bootcamp, I bring a unique perspective to software development.</p>
+                        <p><span class="carrot_bullet fade-in-on-scroll"> > </span> Hi there! I'm Andrea Croak, a creative technologist blending a background in fine arts with a passion for technology. With a Master's degree in Computer Science (Northeastern University '24), a Bachelor's in Fine Arts (MECA&D '13), and training from the General Assembly Fullstack Bootcamp, I bring a unique perspective to software development.</p>
 
-                        <p><span class="carrot_bullet"> > </span> Previously, I've developed front-end solutions for Blackhawk Network, working on gift card purchase portals for brands like Nordstrom, Starbucks, and Delta Airlines. My experience also includes being an Apple certified Mac technician, PC repair technician, and data recovery specialist.</p>
+                        <p><span class="carrot_bullet fade-in-on-scroll"> > </span> Previously, I've developed front-end solutions for Blackhawk Network, working on gift card purchase portals for brands like Nordstrom, Starbucks, and Delta Airlines. My experience also includes being an Apple certified Mac technician, PC repair technician, and data recovery specialist.</p>
 
-                        <p><span class="carrot_bullet"> > </span> Outside of tech, you can find me hiking, immersed in a fantasy book, or indulging my creative side with ceramics, embroidery, and drawing. Oh, and I have a cat who keeps me in line, he's practically my own built in HR department! I'm excited about new opportunities in software development and bringing my diverse skills to innovative projects.</p>
+                        <p><span class="carrot_bullet fade-in-on-scroll"> > </span> Outside of tech, you can find me hiking, immersed in a fantasy book, or indulging my creative side with ceramics, embroidery, and drawing. Oh, and I have a cat who keeps me in line, he's practically my own built in HR department! I'm excited about new opportunities in software development and bringing my diverse skills to innovative projects.</p>
                         
                         </div>
                     </div>
-                    <div class="row py-4">
+                    <div class="row justify-content-md-center">
                         
-                        <div class="col">
+                        <div class="col text-center">
                             <i class="fa-solid fa-pencil fa-2x"></i>
                             <i class="fa-solid fa-cat fa-2x"></i>
                             <i class="fa-solid fa-palette fa-2x"></i>
@@ -152,9 +147,13 @@
                                 Scrum
                             </h4>
                             <ul class="list-unstyled fade-in-on-scroll">
-                                <li>SQL</li>
-                                <li>MongoDB</li>
-                                <li>PostGRES</li>
+                                <li>Certified Scrum Master</li>
+                                <li>
+                                    <a href="https://badgecert.com/bc/html/publicgroup.html?k=b2dDdlZRS0dBWWRVRFgxNlN3Q055ems0cTkybW0yb2Q" target="_blank" rel="noreferrer noopener" alt="Scrum Alliance Certification">
+                                        Badge ID: 1054115
+                                    </a>
+                                </li>
+                                <li>Since 2019</li>
                             </ul>
                         </div>
 
@@ -183,144 +182,134 @@
                         </div>
                     </div>
 
-                    <!-- TODO
-                        * write a blurb for card
-                        * add most used tech to card
-                    -->
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                            <div class="card">
-                                <img src="/images/codeexamples/API_Quote_Gen.png" class="card-img-top" alt="placeholder" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Quote Generator</h5>
-                                    <p class="card-text">Access an API and display the data on the page</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="btn-group">
-                                                <a href="https://github.com/acroak/quote_generator">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noreferrer noopener" alt="Link to Quote Generator Code">Code</button>
-                                                </a>
-                                                <a href="/hosted/quote_generator/index.html" target="_blank" rel="noreferrer noopener"  alt="Link to Live Quote Generator">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Live</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- TODO
-                            * write a blurb for card
-                            * add most used tech to card
-                            * update hrefs to be rel none/external openner
-                        -->
                         <div class="col">
                             <div class="card">
                                 <img src="/images/codeexamples/asteroids_game.png" class="card-img-top" alt="placeholder" />
                                 <div class="card-body">
                                     <h5 class="card-title">Asteroids</h5>
-                                    <p class="card-text">A Python clone of the classic arcade game Asteroids</p>
+                                    <p class="card-text">A simple game written in Python that mimics the classic arcade game "Asteroids." It uses the Pygame library for graphics and user input. The game involves a player-controlled spaceship that must avoid asteroids and shoot them to earn points. The player can move the spaceship using arrow keys and shoot using the spacebar. The game keeps track of the player's score and displays it on the screen.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
                                                 <a href="https://github.com/acroak/Python-Asteroids-Clone" target="_blank" rel="noreferrer noopener" alt="Link to Asteroids Python Clone">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Code</button>
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                        Code
+                                                    </button>
                                                 </a>
                                                 <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Live</button> -->
                                             </div>
+                                            <small class="text-body-secondary">Python, Game</small>
                                         </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- TODO
-                            * write a blurb for card
-                            * add most used tech to card
-                            * update hrefs to be rel none/external openner
-                        -->
                         <div class="col">
                             <div class="card">
                                 <img src="/images/codeexamples/Bento_Recipes.png" class="card-img-top" alt="placeholder" />
                                 <div class="card-body">
                                     <h5 class="card-title">Bento</h5>
-                                    <p class="card-text">A ReactJS website for saving and commenting on recipes</p>
+                                    <p class="card-text">A website that allows users to browse and share recipes. It is built using Django, ReactJS, and ExpressJS. The website provides features such as user registration and authentication, allowing users to create accounts and log in to the site. Once logged in, users can create, edit, and delete their bento box recipes. The site also includes a search feature, allowing users to find recipes based on keywords. </p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <a href="https://codemaineia-summer2023-fe.uc.r.appspot.com/">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noreferrer noopener"  alt="Link to Bento Recipe site code">Code</button>
+                                                <a href="https://github.com/acroak/Bento-Recipe-Site" target="_blank" rel="noreferrer noopener"  alt="Link to Bento Recipe site code">
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary" >
+                                                        Code
+                                                    </button>
                                                 </a>
-                                                <a href="https://github.com/acroak/Bento-Recipe-Site" target="_blank" rel="noreferrer noopener" alt="Link to live Bento Recipe Site">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Live</button>
+                                                <a href="https://codemaineia-summer2023-fe.uc.r.appspot.com/" target="_blank" rel="noreferrer noopener" alt="Link to live Bento Recipe Site">
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                        Live
+                                                    </button>
                                                 </a>
                                             </div>
+                                            <small class="text-body-secondary">ReactJS, ExpressJS</small>
                                         </div>
                                 </div>
                             </div>
                         </div>
 
-                        
-                        <!-- TODO
-                            * write a blurb for card
-                            * add most used tech to card
-                            * update hrefs to be rel none/external openner
-                        -->
                         <div class="col">
                             <div class="card">
                                 <img src="/images/codeexamples/kruskals.png" class="card-img-top" alt="placeholder" />
                                 <div class="card-body">
-                                    <h5 class="card-title">Kruskals MST</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title">Kruskals and Creeps</h5>
+                                    <p class="card-text">An implementation depicting Kruskal's algorithm, which is used to find the minimum spanning tree (MST) of a connected, undirected graph. The implementation includes classes for graphs, edges, and the algorithm itself. It takes scatter plot points of different haunted destinations in New England and seeks to find the best paths between different subsets.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <a href="https://github.com/acroak/KruskalsMST" target="_blank" rel="noreferrer noopener"  alt="Link to Kruskals MST code"><button type="button" class="btn btn-sm btn-outline-secondary">Code</button></a>
+                                                <a href="https://github.com/acroak/KruskalsMST" target="_blank" rel="noreferrer noopener"  alt="Link to Kruskals MST code">
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                        Code
+                                                    </button>
+                                                </a>
                                                 <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Live</button> -->
                                             </div>
+                                            <small class="text-body-secondary">Python, Algorithms</small>
                                         </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- TODO
-                            * write a blurb for card
-                            * add most used tech to card
-                            * update hrefs to be rel none/external openner
-                        -->
                         <div class="col">
                             <div class="card">
                                 <img src="/images/codeexamples/animaldb.png" class="card-img-top" alt="placeholder" />
                                 <div class="card-body">
                                     <h5 class="card-title">Animal Adoption and Shelter DB</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">The project is a database design for an animal shelter management system. The project aims to provide a comprehensive database design for managing an animal shelter, including tracking adoptions, managing animal records, and coordinating shelter operations.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
                                                 <a href="https://github.com/acroak/animalshelterDB" target="_blank" rel="noreferrer noopener"  alt="Link to Aninal DB Code">
-                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Code</button>
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                        Code
+                                                    </button>
                                                 </a>
                                                 <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Live</button> -->
                                             </div>
+                                            <small class="text-body-secondary">SQL, DB Design</small>
                                         </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- medrythms -->
-                        <!-- TODO
-                            * add the source code to public repo
-                            * write a read me
-                            * write a blurb for card
-                            * add most used tech to card
-                            * update hrefs to be rel none/external openner
-                            * add image
-                        -->
                         <div class="col">
                             <div class="card">
-                                <img src="#" class="card-img-top" alt="placeholder" />
+                                <img src="/images/codeexamples/rhythms.png" class="card-img-top" alt="placeholder" />
                                 <div class="card-body">
                                     <h5 class="card-title">MedRhythms Data Scraper</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">Completed as a group project with local stakeholder <a href="https://medrhythms.com/"  target="_blank" rel="noreferrer noopener"  alt="Medrhythms">MedRhythms</a> we sought to streamline and reduce the time overhead of intake process for returned therapy kits. This process includes checking for physical damage to the device, double checking data consistency/removal, and creating a consistent form of intake documentation. For example, making sure all reports generated are in the same format and stored in the same location. This was accomplished through the creation and documentation of an internally facing tool.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
-                                                <button type="button" class="btn btn-sm btn-outline-secondary">Code</button>
+                                                <a href="#" target="_blank" rel="noreferrer noopener"  alt="Link to MedRhythms project">
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                        Code
+                                                    </button>
+                                                </a>
                                                 <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Live</button> -->
                                             </div>
+                                            <small class="text-body-secondary">TypeScript, React Native</small>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                                                <div class="col">
+                            <div class="card">
+                                <img src="/images/codeexamples/API_Quote_Gen.png" class="card-img-top" alt="placeholder" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Quote Generator</h5>
+                                    <p class="card-text">TA simple web application that generates random quotes. It is built using HTML, CSS, and JavaScript. The JavaScript code fetches a random quote from an API (favqs.com) and displays it on the webpage. Users can click a button to generate a new random quote. The project demonstrates how to use APIs to fetch and display data in a web application.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href="https://github.com/acroak/quote_generator" target="_blank" rel="noreferrer noopener" alt="Link to Quote Generator Code">
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Code</button>
+                                                </a>
+                                                <a href="/hosted/quote_generator/index.html" target="_blank" rel="noreferrer noopener"  alt="Link to Live Quote Generator">
+                                                    <button type="button" class="btn btn-sm btn-outline-secondary">Live</button>
+                                                </a>
+                                            </div>
+
+                                            <small class="text-body-secondary">JavaScript, API</small>
                                         </div>
                                 </div>
                             </div>
